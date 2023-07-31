@@ -3,6 +3,7 @@ import {
   Header,
   ImageContainer,
   NavigationContainer,
+  NavLink,
 } from "@/styles/styles";
 import Head from "next/head";
 import Image from "next/image";
@@ -30,8 +31,10 @@ export default function Home() {
       </Header>
       <NavigationContainer>
         <ButtonContainer></ButtonContainer>
-        <ButtonContainer></ButtonContainer>
-        <ButtonContainer></ButtonContainer>
+        <ButtonContainer>
+          {" "}
+          <NavLink href="#">Home</NavLink>
+        </ButtonContainer>
       </NavigationContainer>
     </>
   );

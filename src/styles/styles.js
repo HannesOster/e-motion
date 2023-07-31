@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 const Header = styled.header`
@@ -9,12 +10,14 @@ const Header = styled.header`
   left: 0;
 `;
 const NavigationContainer = styled.nav`
-  border-top: 4px solid #d9daff;
+  border: 4px solid #d9daff;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   height: 100px;
-  width: 100%;
-  left: 0;
+  width: 95%;
+  left: 10;
+  right: 10;
+  display: flex;
 `;
 
 const ImageContainer = styled.div`
@@ -23,8 +26,24 @@ const ImageContainer = styled.div`
   left: 15px;
 `;
 const ButtonContainer = styled.section`
-  border-left: 4px solid #d9daff;
+  border-right: 4px solid #d9daff;
+  display: flex;
   height: 100%;
   width: 33%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 `;
-export { Header, NavigationContainer, ImageContainer, ButtonContainer };
+const NavLink = styled(Link)`
+  text-decoration: none;
+  color: #2f1f40;
+`;
+
+export {
+  Header,
+  NavigationContainer,
+  ImageContainer,
+  ButtonContainer,
+  NavLink,
+};
